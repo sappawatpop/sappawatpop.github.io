@@ -1,0 +1,18 @@
+.container-img{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+}
+
+.container-img:hover{
+    filter: brightness(80%);
+}
+
+.container-img:active{
+    filter: brightness(50%);
+}
+
+.calculate-button{
+    width: 100%;
+    padding: 10px;
+}
