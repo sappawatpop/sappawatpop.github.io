@@ -20,7 +20,7 @@ function select_container(number){
         </tr>
         <table>
         `;
-    }
+    } 
 }
 
 function calculate(number){
@@ -30,12 +30,18 @@ function calculate(number){
         var height = parseFloat(document.querySelector("#height").value);
         var alert_zone = document.querySelector("#alert-zone");
         alert_zone.innerHTML = "";
-        
+
         if(isNaN(diameter_base+diameter_body+height)){
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
             var result = (Math.PI * (height*(diameter_body/2)) + Math.pow((Math.PI*height*(diameter_body-diameter_base)/4),2))*0.016;
-            alert_zone.innerHTML = (result.toFixed(3))+" ลิตร";
+            
+            var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/200;
+            result = result.toFixed(1);
+
+            string+="ต้องใช้ทรายจำนวน "+result+" ถุง";
+            alert_zone.innerHTML = string;
         }
     }
 }
