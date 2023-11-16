@@ -2,9 +2,10 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/img/background.jpeg");
-    background-size: 200px;
-    background-position: top;
+    background-image: url("/img/background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     font-family: 'TH sarabun new';
 
 }
@@ -60,14 +61,15 @@ body{
 
 @media screen and (min-width: 360px) {
     body{
-        font-size: 14px;
+        font-size: 20px;
     }
     .info {
-        font-size: 16px;
+        font-size: 24px;
+        font-style:italic;
     }
 
     h1{
-        font-size: 24px;
+        font-size: 50px;
     }
 }
 

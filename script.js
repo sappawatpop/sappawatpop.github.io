@@ -88,12 +88,12 @@ function calculate(number){
             alert_zone.style.color = 'black';
             result = (4/3)*Math.PI*(height/2)*Math.pow(diameter_body/2,2)*0.016;
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
-            if(result <= 50){
-                string+="ต้องใช้ทรายจำนวน "+0.25+" ถุง";
+            if(result <= 10){
+                string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
                 result = result/(10*sand_amount);
                 result = result.toFixed(1);
-                string+="ต้องใช้ทรายจำนวน "+result+" ถุง";
+                string+="ต้องใช้ทรายจำนวน "+Math.ceil(result)+" ถุง";
             }
             alert_zone.innerHTML = string;
         }
@@ -111,12 +111,12 @@ function calculate(number){
             result = Math.PI*(Math.pow(diameter_base/2,2))*height*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
-            if(result <= 50){
-                string+="ต้องใช้ทรายจำนวน "+0.25+" ถุง";
+            if(result <= 10){
+                string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
                 result = result/(10*sand_amount);
                 result = result.toFixed(1);
-                string+="ต้องใช้ทรายจำนวน "+result+" ถุง";
+                string+="ต้องใช้ทรายจำนวน "+Math.ceil(result)+" ถุง";
             }
             alert_zone.innerHTML = string;
         }
@@ -137,14 +137,15 @@ function calculate(number){
             result = Math.PI*(Math.pow(diameter_big/2,2)+(diameter_big*diameter_small/4)+Math.pow(diameter_small/2,2))*height/3*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
-            if(result <= 50){
-                string+="ต้องใช้ทรายจำนวน "+0.25+" ถุง";
+            if(result <= 10){
+                string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
                 result = result/(10*sand_amount);
                 result = result.toFixed(1);
-                string+="ต้องใช้ทรายจำนวน "+result+" ถุง";
+                string+="ต้องใช้ทรายจำนวน "+Math.ceil(result)+" ถุง";
             }
             alert_zone.innerHTML = string;
         }
     }
 }
+
