@@ -5,6 +5,7 @@ body{
     background-image: url("/img/background.jpeg");
     background-size: 200px;
     background-position: top;
+    font-family: 'TH sarabun new';
 
 }
 
@@ -19,6 +20,8 @@ body{
 
 .container-img:hover{
     filter: brightness(80%);
+    transform: scale(1.15);
+    transition: all .5s;
 }
 
 .container-img:active{
@@ -29,10 +32,20 @@ body{
     margin-top: 10px;
 }
 
+.calculate-button:hover{
+    transform: scale(1.15);
+    transition: all .5s;
+}
+
 .calculate-button{
     width: 100%;
     padding: 10px;
     margin-top:20px;
+    font-size: large;
+    color: linen;
+    border: none;
+    background-color: rgb(76, 193, 154);
+    transform: all .3s;
 }
 
 @media screen and (min-width: 360px) {
@@ -40,11 +53,11 @@ body{
         font-size: 14px;
     }
     .info {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     h1{
-        font-size: 16px;
+        font-size: 24px;
     }
 }
 
@@ -56,4 +69,9 @@ body{
 
 .calculate-desc{
     text-align: center;
+}
+
+footer{
+    text-align: center;
+    font-size: 16px;
 }

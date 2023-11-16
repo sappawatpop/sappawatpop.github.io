@@ -43,7 +43,7 @@ function select_container(number){
         <table>
         `;
 
-    } else if(number == 3){
+    } else if(number == 3 || 4){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
         <table id='container2-table'>
@@ -82,8 +82,10 @@ function calculate(number){
         alert_zone.innerHTML = "";
 
         if(isNaN(diameter_body+height+sand_amount)){
+            alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
+            alert_zone.style.color = 'black';
             result = (4/3)*Math.PI*(height/2)*Math.pow(diameter_body/2,2)*0.016;
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
             if(result <= 50){
@@ -102,8 +104,10 @@ function calculate(number){
         var alert_zone = document.querySelector("#alert-zone");
         alert_zone.innerHTML = "";
         if(isNaN(diameter_base+height+sand_amount)){
+            alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
+            alert_zone.style.color = 'black';
             result = Math.PI*(Math.pow(diameter_base/2,2))*height*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
@@ -126,8 +130,10 @@ function calculate(number){
         alert_zone.innerHTML = "";
 
         if(isNaN(diameter_big+diameter_small+height+sand_amount)){
+            alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
+            alert_zone.style.color = 'black';
             result = Math.PI*(Math.pow(diameter_big/2,2)+(diameter_big*diameter_small/4)+Math.pow(diameter_small/2,2))*height/3*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
