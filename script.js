@@ -45,7 +45,7 @@ function select_container(number){
     } else if(number == 3 || 4){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container2-table'>
+        <table id='container3-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางใหญ่ (นิ้ว)</label></td>
             <td><input type='number' step='0.1' min='0.1' class='diameter-big'></td>
@@ -67,7 +67,31 @@ function select_container(number){
         </tr>
         <table>
         `;
-
+    } else if(number == 5){
+        calculating_zone.innerHTML=`
+        <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
+        <table id='container5-table'>
+        <tr>
+            <td><label>เส้นผ่านศูนย์กลางใหญ่ (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='diameter-big'></td>
+        </tr>
+        <tr>
+            <td><label>เส้นผ่านศูนย์กลางเล็ก (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='diameter-small'></td>
+        </tr>
+        <tr>
+            <td><label>ความสูง (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='height'></td>
+        </tr>
+        <tr>
+        <td><label class='sand-margin'>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+        <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
+        </tr>
+        <tr>
+            <td colspan='2'><button class='calculate-button' onclick='calculate(3);'>คำนวณ</button></td>
+        </tr>
+        <table>
+        `;
     }
 }
 

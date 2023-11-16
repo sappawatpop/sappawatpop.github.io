@@ -15,8 +15,8 @@ body{
 }
 .container-img{
     border: 1px solid black;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     transition: all .3s;
 }
 
@@ -69,13 +69,17 @@ body{
     }
 
     h1{
-        font-size: 50px;
+        font-size: 32px;
     }
 }
 
 @media screen and (min-width: 1024px) {
     .info {
         font-size: 20px;
+    }
+
+    h1{
+        font-size: 50px;
     }
 }
 
