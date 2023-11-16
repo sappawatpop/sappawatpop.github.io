@@ -28,7 +28,7 @@ body{
     filter: brightness(50%);
 }
 
-#sand-amount{
+.sand-margin{
     margin-top: 10px;
 }
 
