@@ -2,12 +2,14 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-color: aqua;
+    background-image: url("/img/background.jpeg");
+    background-size: 200px;
+    background-position: top;
 
 }
 
 #select-zone{
-    margin-bottom:30px;
+    margin-bottom:0px;
 }
 .container-img{
     border: 1px solid black;
@@ -21,6 +23,10 @@ body{
 
 .container-img:active{
     filter: brightness(50%);
+}
+
+#sand-amount{
+    margin-top: 10px;
 }
 
 .calculate-button{
