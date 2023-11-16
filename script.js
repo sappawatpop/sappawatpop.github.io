@@ -42,7 +42,6 @@ function select_container(number){
         </tr>
         <table>
         `;
-
     } else if(number == 3 || 4){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
