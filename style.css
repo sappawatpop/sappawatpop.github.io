@@ -16,6 +16,7 @@ body{
     border: 1px solid black;
     width: 100px;
     height: 100px;
+    transition: all .3s;
 }
 
 .container-img:hover{
@@ -32,6 +33,11 @@ body{
     margin-top: 10px;
 }
 
+#calculating-zone{
+    background-color: rgba(255, 255, 255, 0.419);
+    padding: 15px;
+}
+
 .calculate-button:hover{
     transform: scale(1.15);
     transition: all .5s;
@@ -41,11 +47,15 @@ body{
     width: 100%;
     padding: 10px;
     margin-top:20px;
-    font-size: large;
-    color: linen;
     border: none;
-    background-color: rgb(76, 193, 154);
+    background-color: aquamarine;
     transform: all .3s;
+}
+
+.calculate-button:hover{
+    background-color: rgb(136, 213, 187);
+    transform: scale(1.15);
+    transition: all .5s;
 }
 
 @media screen and (min-width: 360px) {
