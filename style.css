@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'NemoThin';
-    src: url(NemoThin.ttf);
+    src: url(NemoThin.ttf) format(ttf);
 }
 
 body{
