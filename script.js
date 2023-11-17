@@ -139,7 +139,7 @@ function calculate(number){
             alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
-            alert_zone.style.color = 'black';
+            alert_zone.style.color = 'green';
             result = (4/3)*Math.PI*(height/2)*Math.pow(diameter_body/2,2)*0.016;
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
             if(result <= 10){
@@ -161,7 +161,7 @@ function calculate(number){
             alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
-            alert_zone.style.color = 'black';
+            alert_zone.style.color = 'green';
             result = Math.PI*(Math.pow(diameter_base/2,2))*height*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
@@ -187,7 +187,7 @@ function calculate(number){
             alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
-            alert_zone.style.color = 'black';
+            alert_zone.style.color = 'green';
             result = Math.PI*(Math.pow(diameter_big/2,2)+(diameter_big*diameter_small/4)+Math.pow(diameter_small/2,2))*height/3*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
