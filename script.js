@@ -13,7 +13,7 @@ function select_container(number){
             <td><input type='number' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
-            <td><label class='sand-margin'>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+            <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
             <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
@@ -34,7 +34,7 @@ function select_container(number){
             <td><input type='number' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
-        <td><label class='sand-margin'>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+        <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
         <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
@@ -42,7 +42,7 @@ function select_container(number){
         </tr>
         <table>
         `;
-    } else if(number == 3 || 4){
+    } else if(number == 3 ||number == 4){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
         <table id='container3-table'>
@@ -59,7 +59,7 @@ function select_container(number){
             <td><input type='number' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
-        <td><label class='sand-margin'>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+        <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
         <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
@@ -72,11 +72,11 @@ function select_container(number){
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
         <table id='container5-table'>
         <tr>
-            <td><label>เส้นผ่านศูนย์กลางใหญ่ (นิ้ว)</label></td>
+            <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
             <td><input type='number' step='0.1' min='0.1' class='diameter-big'></td>
         </tr>
         <tr>
-            <td><label>เส้นผ่านศูนย์กลางเล็ก (นิ้ว)</label></td>
+            <td><label>เส้นผ่านศูนย์กลางขอบปาก (นิ้ว)</label></td>
             <td><input type='number' step='0.1' min='0.1' class='diameter-small'></td>
         </tr>
         <tr>
@@ -84,14 +84,45 @@ function select_container(number){
             <td><input type='number' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
-        <td><label class='sand-margin'>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+        <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
         <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><button class='calculate-button' onclick='calculate(3);'>คำนวณ</button></td>
+            <td colspan='2'><button class='calculate-button' onclick='calculate(5);'>คำนวณ</button></td>
         </tr>
         <table>
         `;
+    } else if(number == 6){
+        
+    } else if(number == 7){
+        
+    } else if(number == 8){
+        calculating_zone.innerHTML=`
+        <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
+        <table id='container8-table'>
+        <tr>
+            <td><label>ความกว้าง (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='width'></td>
+        </tr>
+        <tr>
+            <td><label>ความยาว (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='length'></td>
+        </tr>
+        <tr>
+            <td><label>ความสูง (นิ้ว)</label></td>
+            <td><input type='number' step='0.1' min='0.1' class='height'></td>
+        </tr>
+        <tr>
+        <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
+        <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
+        </tr>
+        <tr>
+            <td colspan='2'><button class='calculate-button' onclick='calculate(8);'>คำนวณ</button></td>
+        </tr>
+        <table>
+        `;
+    } else {
+        return 0;
     }
 }
 
@@ -169,6 +200,61 @@ function calculate(number){
             }
             alert_zone.innerHTML = string;
         }
+    } else if(number == 5){
+        var diameter_big = parseFloat(document.querySelector(".diameter-big").value);
+        var diameter_small = parseFloat(document.querySelector(".diameter-small").value);
+        var height = parseFloat(document.querySelector(".height").value);
+        var sand_amount = parseFloat(document.querySelector(".sand-amount").value);
+        var alert_zone = document.querySelector("#alert-zone");
+        alert_zone.innerHTML = "";
+
+        if(isNaN(diameter_big+diameter_small+height+sand_amount)){
+            alert_zone.style.color = 'red';
+            alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
+        } else{
+            alert_zone.style.color = 'green';
+            result = (Math.PI*Math.pow(height,2)/3)*(3*(diameter_big/2)-height)-(Math.PI*Math.pow(diameter_small/2,2)/3)*(diameter_small/2)*0.016;
+            
+            var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            if(result <= 10){
+                string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
+            } else{
+                result = result/(10*sand_amount);
+                result = result.toFixed(1);
+                string+="ต้องใช้ทรายจำนวน "+Math.ceil(result)+" ถุง";
+            }
+            alert_zone.innerHTML = string;
+        }
+    } else if(number == 6){
+    } else if(number == 7){
+    } else if(number == 8){
+        var width = parseFloat(document.querySelector(".width").value);
+        var length = parseFloat(document.querySelector(".length").value);
+        var height = parseFloat(document.querySelector(".height").value);
+        var sand_amount = parseFloat(document.querySelector(".sand-amount").value);
+        var alert_zone = document.querySelector("#alert-zone");
+        alert_zone.innerHTML = "";
+
+        if(isNaN(width+length+height+sand_amount)){
+            alert_zone.style.color = 'red';
+            alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
+        } else{
+            alert_zone.style.color = 'green';
+            result = width*length*height*0.016;
+            
+            var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            if(result <= 10){
+                string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
+            } else{
+                result = result/(10*sand_amount);
+                result = result.toFixed(1);
+                string+="ต้องใช้ทรายจำนวน "+Math.ceil(result)+" ถุง";
+            }
+            alert_zone.innerHTML = string;
+        }
+    } else {
+        return 0;
     }
+        
 }
 

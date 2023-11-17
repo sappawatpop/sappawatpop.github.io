@@ -2,11 +2,11 @@ body{
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-image: url("/img/background.png");
+    background-image: url("/img/background1.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family: 'TH sarabun new';
+    font-family:'NemoThin';
 
 }
 
@@ -15,6 +15,7 @@ body{
 }
 .container-img{
     border: 1px solid black;
+    border-radius: 10px;
     width: 200px;
     height: 200px;
     transition: all .3s;
@@ -31,12 +32,14 @@ body{
 }
 
 .sand-margin{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 #calculating-zone{
-    background-color: rgba(255, 255, 255, 0.419);
+    background-color: rgba(255, 255, 255, 0.544);
     padding: 15px;
+    border-radius: 10px;
+
 }
 
 .calculate-button{
@@ -44,35 +47,54 @@ body{
     padding: 10px;
     margin-top:20px;
     border: none;
-    background-color: aquamarine;
+    border-radius: 10px;
+    background-color: rgb(255, 133, 133);
+    font-family:'NemoThin';
+    font-size: 20px;
     transform: all .3s;
 }
 
 .calculate-button:hover{
-    background-color: rgb(136, 213, 187);
+    background-color: rgb(255, 67, 67);
     transform: scale(1.15);
     transition: all .5s;
 }
 
 @media screen and (min-width: 360px) {
     body{
-        font-size: 20px;
+        font-size: 17px;
+        text-align: center;
     }
     .info {
-        font-size: 24px;
-        font-style:italic;
+        font-size: 25px;
     }
     h1{
-        font-size: 32px;
+        font-size: 40px;
+        color: rgb(255, 133, 133);
+        -webkit-text-stroke: 0.1px rgb(180, 53, 53);
+    }
+
+    #alert-zone{
+        font-size: 30px;
     }
 }
 
 @media screen and (min-width: 1024px) {
+    body{
+        font-size: 22px;
+        text-align: center;
+    }
     .info {
-        font-size: 20px;
+        font-size: 25px;
     }
     h1{
         font-size: 50px;
+        color: rgb(255, 133, 133);
+        -webkit-text-stroke: 0.1px rgb(180, 53, 53);
+    }
+
+    #alert-zone{
+        font-size: 30px;
     }
 }
 
