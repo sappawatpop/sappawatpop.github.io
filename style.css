@@ -39,11 +39,6 @@ body{
     padding: 15px;
 }
 
-.calculate-button:hover{
-    transform: scale(1.15);
-    transition: all .5s;
-}
-
 .calculate-button{
     width: 100%;
     padding: 10px;
@@ -67,7 +62,6 @@ body{
         font-size: 24px;
         font-style:italic;
     }
-
     h1{
         font-size: 32px;
     }
@@ -77,7 +71,6 @@ body{
     .info {
         font-size: 20px;
     }
-
     h1{
         font-size: 50px;
     }
