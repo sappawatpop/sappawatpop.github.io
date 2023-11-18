@@ -30,7 +30,7 @@ body{
     filter: brightness(50%);
 }
 
-.sand-margin{
+.sand-amount{
     margin-top: 20px;
 }
 
@@ -41,6 +41,24 @@ body{
 
 }
 
+.index-button{
+    width: 100%;
+    padding: 10px;
+    margin-top:20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 133, 133);
+    font-size: 20px;
+    font-family:'Itim';
+    transform: all .3s;
+}
+
+.index-button:hover{
+    background-color: rgb(255, 67, 67);
+    transform: scale(1.15);
+    transition: all .5s;
+}
+
 .calculate-button{
     width: 100%;
     padding: 10px;
@@ -49,6 +67,7 @@ body{
     border-radius: 10px;
     background-color: rgb(255, 133, 133);
     font-size: 20px;
+    font-family:'Itim';
     transform: all .3s;
 }
 
@@ -68,6 +87,11 @@ body{
     }
     h1{
         font-size: 30px;
+        background-color: rgb(255, 246, 246);
+        padding:10px;
+        border: rgb(255, 133, 133);
+        border-style: dashed;
+        border-radius: 10px;
         color: rgb(255, 133, 133);
         -webkit-text-stroke: 0.1px rgb(180, 53, 53);
     }
