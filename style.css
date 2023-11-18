@@ -48,7 +48,6 @@ body{
     border: none;
     border-radius: 10px;
     background-color: rgb(255, 133, 133);
-    font-family:'NemoThin';
     font-size: 20px;
     transform: all .3s;
 }
