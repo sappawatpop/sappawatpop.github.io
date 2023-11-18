@@ -9,6 +9,10 @@ body{
     font-family:'Itim';
 }
 
+.bigbox{
+    margin-top: 50px;
+}
+
 #select-zone{
     margin-bottom:0px;
 }
@@ -108,6 +112,7 @@ body{
         font-size: 16px;
     }
     h1{
+
         font-size: 30px;
         background-color: rgb(255, 246, 246);
         padding:10px;
@@ -132,6 +137,7 @@ body{
         font-size: 20px;
     }
     h1{
+        top: 50px;
         font-size: 40px;
         color: rgb(255, 133, 133);
         -webkit-text-stroke: 0.1px rgb(180, 53, 53);
