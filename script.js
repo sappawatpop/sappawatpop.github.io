@@ -9,6 +9,10 @@ function goToPage(number){
         window.location.href = 'aedes.html';
     }else if(number == 4){
         window.location.href = 'prevent.html';
+    }else if(number == 5){
+        window.location.href = 'abate.html';
+    } else{
+        return 0;
     }
 }
 

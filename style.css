@@ -143,6 +143,15 @@ h1{
     width: 200px;
 }
 
+footer{
+    
+    display: block;
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(255, 133, 133);;
+    color: white;
+}
+
 @media screen and (min-width: 360px) {
     .container-img{
         width: 150px;
