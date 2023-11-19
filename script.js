@@ -417,9 +417,6 @@ function calculate(number){
             alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
-            alert_zone.style.color = 'green';
-            result = width*length*height*0.016;
-            
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
@@ -435,4 +432,3 @@ function calculate(number){
     }
         
 }
-
