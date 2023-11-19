@@ -15,8 +15,6 @@ body{
 .container-img{
     border: 1px solid black;
     border-radius: 10px;
-    width: 200px;
-    height: 200px;
     transition: all .3s;
 }
 
@@ -42,10 +40,9 @@ body{
 }
 
 .index{
-    width: 100%;
+    width: fit-content;
     text-align: center;
     padding-block: 15px;
-    padding-inline: 70px;
     margin-top:20px;
     border: dotted;
     border-radius: 10px;
@@ -111,8 +108,9 @@ body{
 }
 
 .calculate-button{
-    width: 100%;
+    width: fit-content;
     padding: 10px;
+    padding-inline: 60px;
     margin-top:20px;
     border: none;
     border-radius: 10px;
@@ -146,11 +144,16 @@ h1{
 }
 
 @media screen and (min-width: 360px) {
+    .container-img{
+        width: 150px;
+        height: 150px;
+    }
     body{
         font-size: 16px;
         text-align: center;
     }
     .info {
+        width: 330px;
         font-size: 16px;
     }
     h1{
@@ -165,6 +168,9 @@ h1{
 
     #knowledge{
         margin-bottom: 5px;
+    }
+    #cycle-image{
+        width: 330px;
     }
 
     .back-button{
@@ -189,6 +195,7 @@ h1{
         
     }
     .index{
+        width: 360px;
         font-size: 20px;
     }
     .space{
@@ -200,11 +207,16 @@ h1{
 }
 
 @media screen and (min-width: 1024px) {
+    .container-img{
+        width: 200px;
+        height: 200px;
+    }
     body{
         font-size: 20px;
         text-align: center;
     }
     .info {
+        width: 500px;
         font-size: 20px;
     }
     h1{
@@ -219,6 +231,9 @@ h1{
 
     #knowledge{
         margin-bottom: 20px;
+    }
+    #cycle-image{
+        width: 500px;
     }
 
     .back-button{
@@ -238,6 +253,7 @@ h1{
         font-size: 30px;
     }
     .index{
+        width: 500px;
         font-size: 30px;
     }
     .space{
