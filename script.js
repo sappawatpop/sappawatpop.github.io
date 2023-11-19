@@ -4,7 +4,11 @@ function goToPage(number){
     }else if(number == 1){
         window.location.href = 'calculator.html';
     }else if(number == 2){
-        window.location.href = 'calculator.html';
+        window.location.href = 'DHF.html';
+    }else if(number == 3){
+        window.location.href = 'aedes.html';
+    }else if(number == 4){
+        window.location.href = 'prevent.html';
     }
 }
 
@@ -33,6 +37,11 @@ function select_container(number){
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number'  class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
+        </tr>
+        <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(1);'>คำนวณ</button></td>
         </tr>
         <table>
@@ -52,6 +61,11 @@ function select_container(number){
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
+        </tr>
+        <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(2);'>คำนวณ</button></td>
@@ -77,6 +91,11 @@ function select_container(number){
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
+        </tr>
+        <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(3);'>คำนวณ</button></td>
@@ -112,6 +131,11 @@ function select_container(number){
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
+        </tr>
+        <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(4);'>คำนวณ</button></td>
         </tr>
         <table>
@@ -137,6 +161,11 @@ function select_container(number){
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
+        </tr>
+        <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(5);'>คำนวณ</button></td>
         </tr>
         <table>
@@ -156,6 +185,11 @@ function select_container(number){
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
+        </tr>
+        <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(6);'>คำนวณ</button></td>
@@ -191,6 +225,11 @@ function select_container(number){
             <td><input class='sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
+        </tr>
+        <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(7);'>คำนวณ</button></td>
         </tr>
         <table>
@@ -216,6 +255,11 @@ function select_container(number){
             <td><input class='sand-margin sand-amount' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
+            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
+            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
+        </tr>
+        <tr>
             <td colspan='2'><button class='calculate-button' onclick='calculate(8);'>คำนวณ</button></td>
         </tr>
         <table>
@@ -232,6 +276,7 @@ function calculate(number){
         var diameter_body = parseFloat(document.querySelector(".diameter-body").value);
         var height = parseFloat(document.querySelector(".height").value);
         var sand_amount = parseFloat(document.querySelector(".sand-amount").value);
+        var percent = parseFloat(document.querySelector(".button-click").value);
         var alert_zone = document.querySelector("#alert-zone");
         alert_zone.innerHTML = "";
 
@@ -241,7 +286,9 @@ function calculate(number){
         } else{
             alert_zone.style.color = 'green';
             result = Math.PI*height*(2*Math.pow(diameter_body/2,2)+Math.pow(diameter_base/2,2))*0.016;
+            
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -265,6 +312,7 @@ function calculate(number){
             result = Math.PI*(Math.pow(diameter_base/2,2))*height*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -291,6 +339,7 @@ function calculate(number){
             result = Math.PI*(Math.pow(diameter_big/2,2)+(diameter_big*diameter_small/4)+Math.pow(diameter_small/2,2))*height/3*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -320,6 +369,7 @@ function calculate(number){
             result = (base_area+Math.sqrt(base_area*top_area)+top_area)*height/3*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -345,6 +395,7 @@ function calculate(number){
             result = (Math.PI*Math.pow(height,2)/3)*(3*(diameter_big/2)-height)-(Math.PI*Math.pow(diameter_small/2,2)/3)*(diameter_small/2)*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -369,6 +420,7 @@ function calculate(number){
             result = (Math.PI*height/6)*(3*Math.pow(diameter/2,3)+Math.pow(height,2))*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -396,6 +448,7 @@ function calculate(number){
             result = ((top_width*base_length+top_length*base_width+2*(top_length*top_width+base_length*base_width))/6)*height*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
             } else{
@@ -417,9 +470,15 @@ function calculate(number){
             alert_zone.style.color = 'red';
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
+            alert_zone.style.color = 'green';
+            result = width*length*height*0.016;
+
+            
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
+            result = result/percent
             if(result <= 10){
                 string+="ต้องใช้ทรายจำนวน "+1+" ถุง";
+                return string;
             } else{
                 result = result/(10*sand_amount);
                 result = result.toFixed(1);
@@ -431,4 +490,19 @@ function calculate(number){
         return 0;
     }
         
+}
+
+function button_click(button_number){
+    let button_list = document.querySelectorAll(".thebutton");
+    button_list.forEach(button => {
+        button.className = "";
+        button.classList.toggle("thebutton");
+        button.classList.toggle("button-noclick");
+    });
+
+    button_list[button_number].classList.toggle("button-noclick");
+    button_list[button_number].classList.toggle("button-click");
+
+    let button_value = parseFloat(button_list[button_number].value,10);
+    return button_value;
 }

@@ -41,14 +41,28 @@ body{
 
 }
 
+.index{
+    width: 100%;
+    text-align: center;
+    padding-block: 15px;
+    padding-inline: 70px;
+    margin-top:20px;
+    border: dotted;
+    border-radius: 10px;
+    color: rgb(202, 106, 106);
+    background-color: rgb(255, 246, 246);
+    font-family:'Itim';
+    transform: all .3s;
+}
+
 .index-button{
     width: 100%;
     padding: 10px;
     margin-top:20px;
-    border: none;
+    border: rgb(255, 133, 133);
+    border-style: none;
     border-radius: 10px;
     background-color: rgb(255, 133, 133);
-    font-size: 20px;
     font-family:'Itim';
     transform: all .3s;
 }
@@ -59,11 +73,26 @@ body{
     transition: all .5s;
 }
 
+.knowledge-button{
+    width: 70%;
+    padding: 10px;
+    border: rgb(255, 133, 133);
+    border-style: none;
+    border-radius: 10px;
+    background-color: rgb(254, 173, 173);
+    font-family:'Itim';
+    transform: all .3s;
+}
+
+.knowledge-button:hover{
+    background-color: rgb(255, 67, 67);
+    transform: scale(1.15);
+    transition: all .5s;
+}
+
 .back-button{
-    position: fixed;
     top: 0px;
     left: 10px;
-    opacity: 50%;
     width: fit-content;
     padding: 10px;
     margin-top:20px;
@@ -99,6 +128,23 @@ body{
     transition: all .5s;
 }
 
+h1{
+    background-color: rgb(255, 246, 246);
+    padding:10px;
+    border: rgb(255, 133, 133);
+    border-style: dashed;
+    border-radius: 10px;
+    color: rgb(255, 133, 133);
+    -webkit-text-stroke: 0.1px rgb(180, 53, 53);
+}
+
+.mosquito-image{
+    justify-items: center;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 200px;
+}
+
 @media screen and (min-width: 360px) {
     body{
         font-size: 16px;
@@ -108,19 +154,48 @@ body{
         font-size: 16px;
     }
     h1{
-
         font-size: 30px;
-        background-color: rgb(255, 246, 246);
-        padding:10px;
-        border: rgb(255, 133, 133);
-        border-style: dashed;
-        border-radius: 10px;
-        color: rgb(255, 133, 133);
-        -webkit-text-stroke: 0.1px rgb(180, 53, 53);
+    }
+    p2{
+        font-size: 20px;
+    }
+    .thebutton{
+        font-size: 16px;
+    }
+
+    #knowledge{
+        margin-bottom: 5px;
+    }
+
+    .back-button{
+        position: absolute;
+        opacity: 100%;
+    }
+
+    .blank{
+        margin-bottom: 50px;
+
     }
 
     #alert-zone{
         font-size: 25px;
+    }
+
+    .index-button{
+        font-size: 20px;
+    }
+    .knowledge-button{
+        font-size: 16px;
+        
+    }
+    .index{
+        font-size: 20px;
+    }
+    .space{
+        padding-top: 15px;
+    }
+    .space2{
+        margin-top: 20px;
     }
 }
 
@@ -133,14 +208,43 @@ body{
         font-size: 20px;
     }
     h1{
-        top: 50px;
         font-size: 40px;
-        color: rgb(255, 133, 133);
-        -webkit-text-stroke: 0.1px rgb(180, 53, 53);
+    }
+    p2{
+        font-size: 25px;
+    }
+    .thebutton{
+        font-size: 20px;
+    }
+
+    #knowledge{
+        margin-bottom: 20px;
+    }
+
+    .back-button{
+        position: fixed;
+        opacity: 50%;
+    }
+
+    .blank{
+        margin-bottom: 0px;
     }
 
     #alert-zone{
         font-size: 30px;
+    }
+
+    .index-button{
+        font-size: 30px;
+    }
+    .index{
+        font-size: 30px;
+    }
+    .space{
+        padding-top: 40px;
+    }
+    .space2{
+        margin-top: 40px;
     }
 }
 
@@ -148,7 +252,46 @@ body{
     text-align: center;
 }
 
+.percent-button{
+    align-items: baseline;
+}
+
 footer{
     text-align: center;
     font-size: 16px;
 }
+
+.thebutton{
+    width: 40px;
+    padding: 5px;
+    margin:20px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-family:'Itim';
+    transform: all .3s;
+}
+
+.order{
+    width: 40px;
+    background-color: rgb(255, 133, 133);;
+    padding: 1px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.thebutton:hover{
+    transform: scale(1.15);
+    transition: all .5s;
+}
+
+.button-noclick{
+    background-color: rgb(255, 133, 133);
+}
+
+.button-click{
+    background-color: rgb(180, 53, 53);
+    transform: scale(1.15);
+}
+
