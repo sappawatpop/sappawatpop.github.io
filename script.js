@@ -275,12 +275,12 @@ function select_container(number){
 
 function calculate(number){
     var result;
+    var percent = parseFloat(document.querySelector(".button-click").value);
     if(number == 1){
         var diameter_base = parseFloat(document.querySelector(".diameter-base").value);
         var diameter_body = parseFloat(document.querySelector(".diameter-body").value);
         var height = parseFloat(document.querySelector(".height").value);
         var sand_amount = parseFloat(document.querySelector(".sand-amount").value);
-        var percent = parseFloat(document.querySelector(".button-click").value);
         var alert_zone = document.querySelector("#alert-zone");
         alert_zone.innerHTML = "";
 
@@ -396,7 +396,7 @@ function calculate(number){
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
             alert_zone.style.color = 'green';
-            result = (Math.PI*Math.pow(height,2)/3)*(3*(diameter_big/2)-height)-(Math.PI*Math.pow(diameter_small/2,2)/3)*(diameter_small/2)*0.016;
+            result = Math.PI*height/6*(3*Math.pow(diameter_big/2,2)+3*Math.pow(diameter_small/2,2)+Math.pow(height,2))*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
             result = result/percent
