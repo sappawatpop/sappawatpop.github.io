@@ -11,6 +11,8 @@ function goToPage(number){
         window.location.href = 'prevent.html';
     }else if(number == 5){
         window.location.href = 'abate.html';
+    }else if(number == 6){
+        window.location.href = '3keb.html';
     } else{
         return 0;
     }
