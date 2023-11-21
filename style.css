@@ -36,7 +36,11 @@ body{
     background-color: rgba(255, 255, 255, 0.544);
     padding: 15px;
     border-radius: 10px;
-
+}
+#question-zone{
+    background-color: rgba(255, 255, 255, 0.544);
+    padding: 15px;
+    border-radius: 10px;
 }
 
 .index{
@@ -143,16 +147,11 @@ h1{
     width: 200px;
 }
 
-footer{
-    
-    display: block;
-    text-align: center;
-    padding: 3px;
-    background-color: rgb(255, 133, 133);;
-    color: white;
-}
 
 @media screen and (min-width: 360px) {
+    #question-zone{
+        width: 360px;
+    }
     .container-img{
         width: 150px;
         height: 150px;
@@ -216,6 +215,9 @@ footer{
 }
 
 @media screen and (min-width: 1024px) {
+    #question-zone{
+        width: 500px;
+    }
     .container-img{
         width: 200px;
         height: 200px;
@@ -281,11 +283,6 @@ footer{
     align-items: baseline;
 }
 
-footer{
-    text-align: center;
-    font-size: 16px;
-}
-
 .thebutton{
     width: 40px;
     padding: 5px;
@@ -318,5 +315,15 @@ footer{
 .button-click{
     background-color: rgb(180, 53, 53);
     transform: scale(1.15);
+}
+
+footer{
+    bottom: 0px;
+    padding: 10px 10px;
+    margin-bottom: -10px;
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(180, 53, 53);
+    color: #ffffff;
 }
 
