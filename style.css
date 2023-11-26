@@ -318,8 +318,8 @@ h1{
 }
 
 footer{
-    bottom: 0px;
-    padding: 10px 10px;
+    bottom: 0;
+    padding-bottom: 20px;
     margin-bottom: -10px;
     height: 100px;
     width: 100vw;
