@@ -423,7 +423,7 @@ function calculate(number){
             alert_zone.innerHTML = "กรุณากรอกข้อมูลให้ครบถ้วน";
         } else{
             alert_zone.style.color = 'green';
-            result = (Math.PI*height/6)*(3*Math.pow(diameter/2,3)+Math.pow(height,2))*0.016;
+            result = (Math.PI*height/6)*(3*Math.pow(diameter/2,2)+Math.pow(height,2))*0.016;
             
             var string = "ปริมาตรน้ำสูงสุดในภาชนะเท่ากับ "+result.toFixed(1)+" ลิตร"+"<br>";
             result = result/percent
