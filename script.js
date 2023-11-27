@@ -28,23 +28,22 @@ function select_container(number){
         <table id='container1-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-base'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-base'></td>
         </tr>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางส่วนที่กว้างสุด (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-body'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-body'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -58,19 +57,18 @@ function select_container(number){
         <table id='container2-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-base'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-base'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -84,23 +82,22 @@ function select_container(number){
         <table id='container3-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-small'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-small'></td>
         </tr>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางขอบปาก (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-big'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-big'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -114,31 +111,30 @@ function select_container(number){
         <table id='container4-table'>
         <tr>
             <td><label>ความกว้างฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='base-width'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-width'></td>
         </tr>
         <tr>
             <td><label>ความยาวฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='base-length'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-length'></td>
         </tr>
         <tr>
             <td><label>ความกว้างปากขอบ (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='top-width'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='top-width'></td>
         </tr>
         <tr>
             <td><label>ความยาวปากขอบ (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='top-length'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='top-length'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -152,23 +148,22 @@ function select_container(number){
         <table id='container5-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-big'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-big'></td>
         </tr>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางขอบปาก (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter-small'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-small'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -182,19 +177,18 @@ function select_container(number){
         <table id='container6-table'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางขอบปาก (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='diameter'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -208,31 +202,30 @@ function select_container(number){
         <table id='container7-table'>
         <tr>
             <td><label>ความกว้างฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='base-width'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-width'></td>
         </tr>
         <tr>
             <td><label>ความยาวฐาน (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='base-length'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-length'></td>
         </tr>
         <tr>
             <td><label>ความกว้างปากขอบ (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='top-width'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='top-width'></td>
         </tr>
         <tr>
             <td><label>ความยาวปากขอบ (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='top-length'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='top-length'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;' type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -246,23 +239,22 @@ function select_container(number){
         <table id='container8-table'>
         <tr>
             <td><label>ความกว้าง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='width'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='width'></td>
         </tr>
         <tr>
             <td><label>ความยาว (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='length'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='length'></td>
         </tr>
         <tr>
             <td><label>ความสูง (นิ้ว)</label></td>
-            <td><input type='number' style='width: 120px;' step='0.1' min='0.1' class='height'></td>
+            <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='height'></td>
         </tr>
         <tr>
             <td><label>ปริมาณทรายอะเบทใน 1 ถุง (กรัม)</label></td>
-            <td><input class='sand-amount' style='width: 120px;'  type='number' step='0.1' min='0.1'></td>
+            <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;'  type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td><label>ความเข้มข้นของทีมีฟอส</label></td>
-            <td><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
