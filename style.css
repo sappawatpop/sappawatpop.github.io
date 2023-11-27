@@ -67,6 +67,7 @@ body{
     padding-bottom: 20px;
     padding-inline: 0px;
     margin-top:20px;
+    color: rgb(0, 0, 0);
     border: 2px solid rgb(133, 255, 162);
     border-radius: 10px;
     background-color: rgb(108, 240, 139);
@@ -86,6 +87,7 @@ body{
     border: rgb(255, 133, 133);
     border-style: none;
     border-radius: 10px;
+    color: rgb(0, 0, 0);
     background-color: rgb(254, 173, 173);
     font-family:'Niramit';
     transform: all .3s;
@@ -123,6 +125,7 @@ body{
     padding-inline: 60px;
     margin-top:20px;
     border: none;
+    color: rgb(0, 0, 0);
     border-radius: 10px;
     background-color: rgb(255, 133, 133);
     font-size: 20px;
@@ -294,10 +297,6 @@ h1{
 
 .calculate-desc{
     text-align: center;
-}
-
-.percent-button{
-    align-items: baseline;
 }
 
 .thebutton{
