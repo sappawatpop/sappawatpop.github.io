@@ -6,8 +6,9 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    font-family:'Itim';
+    font-family:'Niramit';
 }
+
 
 #select-zone{
     margin-bottom:0px;
@@ -32,6 +33,10 @@ body{
     margin-top: 20px;
 }
 
+.column-set{
+    width: 20%;
+}
+
 #calculating-zone{
     background-color: rgba(255, 255, 255, 0.544);
     padding: 15px;
@@ -52,19 +57,20 @@ body{
     border-radius: 10px;
     color: rgb(202, 106, 106);
     background-color: rgb(255, 246, 246);
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 
 #main-button{
     width: 100%;
-    padding: 10px;
-    padding-block: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-inline: 0px;
     margin-top:20px;
     border: 2px solid rgb(133, 255, 162);
     border-radius: 10px;
     background-color: rgb(108, 240, 139);
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 
@@ -81,7 +87,7 @@ body{
     border-style: none;
     border-radius: 10px;
     background-color: rgb(254, 173, 173);
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 
@@ -102,7 +108,7 @@ body{
     color: white;
     background-color: black;
     font-size: 20px;
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 .back-button:hover{
@@ -120,7 +126,7 @@ body{
     border-radius: 10px;
     background-color: rgb(255, 133, 133);
     font-size: 20px;
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 
@@ -157,12 +163,16 @@ h1{
         height: 150px;
     }
     body{
-        font-size: 18px;
+        font-size: 20px;
         text-align: center;
+    }
+    footer{
+        padding-bottom: 30px;
+        font-size: 15px;
     }
     .info {
         width: 330px;
-        font-size: 18px;
+        font-size: 22px;
     }
     h1{
         font-size: 30px;
@@ -171,7 +181,7 @@ h1{
         font-size: 20px;
     }
     .thebutton{
-        font-size: 18px;
+        font-size: 16px;
     }
 
     #knowledge{
@@ -196,12 +206,11 @@ h1{
     }
 
     #main-button{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .knowledge-button{
         font-size: 18px;
-        
     }
     .index{
         width: 360px;
@@ -227,6 +236,12 @@ h1{
         font-size: 20px;
         text-align: center;
     }
+
+    footer{
+    padding-bottom: 30px;
+
+    }
+
     .info {
         width: 500px;
         font-size: 20px;
@@ -262,7 +277,7 @@ h1{
     }
 
     #main-button{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .index{
@@ -287,12 +302,12 @@ h1{
 
 .thebutton{
     width: 40px;
-    padding: 5px;
-    margin:20px;
+    padding: 3px;
+    margin:10px;
     border: none;
     border-radius: 10px;
     color: rgb(0, 0, 0);
-    font-family:'Itim';
+    font-family:'Niramit';
     transform: all .3s;
 }
 
@@ -321,11 +336,9 @@ h1{
 
 footer{
     bottom: 0;
-    padding-bottom: 20px;
     margin-bottom: -10px;
     height: 100px;
     width: 100vw;
     background-color: rgb(180, 53, 53);
     color: #ffffff;
 }
-
