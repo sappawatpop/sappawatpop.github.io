@@ -56,20 +56,20 @@ body{
     transform: all .3s;
 }
 
-.index-button{
+#main-button{
     width: 100%;
     padding: 10px;
+    padding-block: 20px;
     margin-top:20px;
-    border: rgb(255, 133, 133);
-    border-style: none;
+    border: 2px solid rgb(133, 255, 162);
     border-radius: 10px;
-    background-color: rgb(255, 133, 133);
+    background-color: rgb(108, 240, 139);
     font-family:'Itim';
     transform: all .3s;
 }
 
-.index-button:hover{
-    background-color: rgb(255, 67, 67);
+#main-button:hover{
+    background-color: rgb(63, 190, 92);
     transform: scale(1.15);
     transition: all .5s;
 }
@@ -195,9 +195,10 @@ h1{
         font-size: 25px;
     }
 
-    .index-button{
+    #main-button{
         font-size: 20px;
     }
+
     .knowledge-button{
         font-size: 18px;
         
@@ -260,9 +261,10 @@ h1{
         font-size: 30px;
     }
 
-    .index-button{
+    #main-button{
         font-size: 30px;
     }
+
     .index{
         width: 500px;
         font-size: 30px;
