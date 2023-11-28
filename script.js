@@ -13,6 +13,8 @@ function goToPage(number){
         window.location.href = 'abate.html';
     }else if(number == 6){
         window.location.href = '3keb.html';
+    }else if(number == 7){
+        window.location.href = 'problem.html';
     } else{
         return 0;
     }
@@ -25,7 +27,7 @@ function select_container(number){
     if(number == 1){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container1-table'>
+        <table id='container1-table' class='info'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-base'></td>
@@ -43,7 +45,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -54,7 +56,7 @@ function select_container(number){
     } else if(number == 2){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container2-table'>
+        <table id='container2-table' class='info'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-base'></td>
@@ -68,7 +70,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -79,7 +81,7 @@ function select_container(number){
     } else if(number == 3){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container3-table'>
+        <table id='container3-table' class='info'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-small'></td>
@@ -97,7 +99,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -108,7 +110,7 @@ function select_container(number){
     } else if(number == 4){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container4-table'>
+        <table id='container4-table' class='info'>
         <tr>
             <td><label>ความกว้างฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-width'></td>
@@ -134,7 +136,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -145,7 +147,7 @@ function select_container(number){
     } else if(number == 5){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container5-table'>
+        <table id='container5-table' class='info'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter-big'></td>
@@ -163,7 +165,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -174,7 +176,7 @@ function select_container(number){
     } else if(number == 6){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container6-table'>
+        <table id='container6-table' class='info'>
         <tr>
             <td><label>เส้นผ่านศูนย์กลางขอบปาก (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='diameter'></td>
@@ -188,7 +190,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -199,7 +201,7 @@ function select_container(number){
     } else if(number == 7){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container7-table'>
+        <table id='container7-table' class='info'>
         <tr>
             <td><label>ความกว้างฐาน (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='base-width'></td>
@@ -225,7 +227,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;' type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>
@@ -236,7 +238,7 @@ function select_container(number){
     } else if(number == 8){
         calculating_zone.innerHTML=`
         <p class='calculate-desc info'>กรอกข้อมูลดังต่อไปนี้</p>
-        <table id='container8-table'>
+        <table id='container8-table' class='info'>
         <tr>
             <td><label>ความกว้าง (นิ้ว)</label></td>
             <td><input type='number' style='width: 80px; padding: 5px 0px 5px;' step='0.1' min='0.1' class='width'></td>
@@ -254,7 +256,7 @@ function select_container(number){
             <td><input class='sand-amount' style='width: 80px; padding: 5px 0px 5px;'  type='number' step='0.1' min='0.1'></td>
         </tr>
         <tr>
-            <td colspan='2'><label style='margin-right: 40px;'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
+            <td colspan='2'><label class='space3'>ความเข้มข้นของทีมีฟอส</label><button type='number' class="thebutton button-click" onclick="button_click(0)" value=1>1%</button>
             <button type='number' class="thebutton button-noclick" onclick="button_click(1)" value=2>2%</button></td>
         </tr>
         <tr>

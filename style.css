@@ -51,6 +51,7 @@ body{
     background-color: rgba(255, 255, 255, 0.544);
     padding: 15px;
     border-radius: 10px;
+    text-align: left;
 }
 
 .index{
@@ -230,6 +231,9 @@ h1{
     .space2{
         margin-top: 20px;
     }
+    .space3{
+        margin-right: 30px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -297,6 +301,9 @@ h1{
     }
     .space2{
         margin-top: 40px;
+    }
+    .space3{
+        margin-right: 100px;
     }
 }
 

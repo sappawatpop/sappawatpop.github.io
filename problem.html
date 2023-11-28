@@ -9,7 +9,7 @@
 </head>
 <body>
     <script src="/script.js"></script>
-    <button class="back-button" onclick="goToPage(1)">ย้อนกลับ</button>
+    <button class="back-button" onclick="goToPage(0)">ย้อนกลับสู่หน้าหลัก</button>
     <div class="blank"></div>
     <h1 style="margin-bottom: 0px;">
         <table>
@@ -17,40 +17,47 @@
         </table>
     </h1>
     <table id="question-zone" class="text-box">
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทอยู่ได้นานแค่ไหน?
+        <tr><td><a style="font-weight: bold;">1. </a><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทอยู่ได้นานแค่ไหน?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a> นานประมาณ 3 เดือน ต่อการใช้ 1 ครั้ง
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a> นานประมาณ 3 เดือน ต่อการใช้ 1 ครั้ง
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ใส่น้ำดื่มได้ไหม? ถ้าเกิดดื่มไปแล้วจะอันตรายไหม?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">2. </a><a style="color:crimson; font-size: larger;">ถาม</a> ใส่น้ำดื่มได้ไหม? ถ้าเกิดดื่มไปแล้วจะอันตรายไหม?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a> ควรหลีกเลี่ยงการดื่ม 
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a> ควรหลีกเลี่ยงการดื่ม 
           ถ้าพลาดดื่มในปริมาณไม่มากก็ไม่เป็นอันตราย แต่หากกลืนกินสารที่ความเข้มข้นสูง ให้อาเจียนออก บ้วนปากล้างปากด้วยน้ำสะอาด แล้วรีบนำส่งแพทย์ทันที
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทมีผลต่อผิวหนังไหม?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">3. </a><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทมีผลต่อผิวหนังไหม?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a> หากถูกผิวหนังในลักษณะเจือจางก็อาจจะไม่มีผล 
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a> หากถูกผิวหนังในลักษณะเจือจางก็อาจจะไม่มีผล 
           หากถูกผิวหนังหรือสัมผัสโดยตรง ให้ล้างออกด้วยสบู่หรือน้ำสะอาด
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ใส่ทรายอะเบทในอ่างเลี้ยงปลาได้ไหม?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">4. </a><a style="color:crimson; font-size: larger;">ถาม</a> ใส่ทรายอะเบทในอ่างเลี้ยงปลาได้ไหม?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a>ไม่ควรใส่ เพราะอาจส่งผลต่อปลาและปกติปลาจะกินลูกน้ำอยู่แล้ว
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a>ไม่ควรใส่ เพราะอาจส่งผลต่อปลาและปกติปลาจะกินลูกน้ำอยู่แล้ว
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทหมดอายุใช้ได้ไหม?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">5. </a><a style="color:crimson; font-size: larger;">ถาม</a> ทรายอะเบทหมดอายุใช้ได้ไหม?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a>ไม่ควรนำไปใช้ เพราะปริมาณสารจะออกฤทธิ์ไม่ได้ผล 
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a>ไม่ควรนำไปใช้ เพราะปริมาณสารจะออกฤทธิ์ไม่ได้ผล 
           100% ทำให้ไม่สามารถทำให้ลูกน้ำตายได้ 100% ยุงที่รอดก็จะกลายยุงที่ดื้อต่อทรายอะเบท
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> ภาชนะมีรูปร่างนอกเหนือจากในรูป ควรทำอย่างไร?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">6. </a><a style="color:crimson; font-size: larger;">ถาม</a> ภาชนะมีรูปร่างนอกเหนือจากในรูป ควรทำอย่างไร?
         </td></tr>
-        <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a> คำตอบนี้แบ่งออกได้เป็น 3 กรณี คือ
+        <tr><td><a style="color:limegreen; font-size: larger;">ตอบ</a> คำตอบนี้แบ่งออกได้เป็น 3 กรณี คือ
           <br><a class="order">1.</a> หากภาชนะมีขนาดเล็ก ควรเลือกเทน้ำในภาชนะออกและคว่ำภาชนะ
-          <br><a class="order">2.</a> หากภาชนะมีขนาดใหญ่หรือยึดติดกับพื้น แต่มีความจุน้อยกว่า 10 ลิตร (เช่น ล้อยาง อิฐบล๊อก) ให้ใช้ทรายอะเบท 1 ถุง
-          <br><img style="margin: 10px;" class="mosquito-image" src="/img/wheel.jpg">
-          <br><a class="order">3.</a> หากภาชนะมีขนาดใหญ่ มีความจุน้ำมาก ให้เลือกใช้รูปทรงที่ใกล้เคียงที่สุดที่ครอบภาชนะนั้นได้ เช่น ทรงกระบอก ทรงสี่เหลี่ยม เป็นต้น
-          <br><img style="margin: 10px;" class="mosquito-image" src="/img/star-a.jpg">
+          <br><a class="order">2.</a> หากภาชนะมีขนาดใหญ่หรือยึดติดกับพื้น แต่มีความจุน้อยกว่า 10 ลิตร (เช่น ล้อยาง อิฐบล๊อก) ให้ใช้ทรายอะเบท 1 ถุง</td></tr>
+          <tr><td style="text-align: center;"><img style="margin: 10px;" class="mosquito-image" src="/img/wheel.jpg"></td></tr>
+          <tr><td><a class="order">3.</a> หากภาชนะมีขนาดใหญ่ มีความจุน้ำมาก ให้เลือกใช้รูปทรงที่ใกล้เคียงที่สุดที่ครอบภาชนะนั้นได้ เช่น ทรงกระบอก ทรงสี่เหลี่ยม เป็นต้น</td></tr>
+          <tr><td style="text-align: center;">
+          <img style="margin: 10px;" class="mosquito-image" src="/img/star-a.jpg">
           <img style="margin: 10px;" class="mosquito-image" src="/img/star-b.png">
         </td></tr>
-        <tr><td><a style="color:crimson; font-size: larger;">ถาม</a> เว็บไซต์มีปัญหา?
+        <tr><td style="text-align: center; padding: 10px;">------------------------</td></tr>
+        <tr><td><a style="font-weight: bold;">7. </a><a style="color:crimson; font-size: larger;">ถาม</a> เว็บไซต์มีปัญหา?
         </td></tr>
         <tr><td style="padding-bottom: 20px;"><a style="color:limegreen; font-size: larger;">ตอบ</a> ติดต่อได้ที่
           <br>โรงพยาบาลส่งเสริมสุขภาพตำบลบ้านเซิด
